@@ -1,0 +1,86 @@
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Adding a GET handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Adding a DELETE handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Adding a GET handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Adding a DELETE handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Adding a GET handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Adding a DELETE handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Adding a GET handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Adding a DELETE handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"16ac0160-bea6-11e8-af46-f58dfba2b72b\",\"title\":\"Canon\",\"content\":\"Whiskey bar\"}"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars?title=Canon"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Adding a GET handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Adding a DELETE handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"5bfdfa20-bea6-11e8-af46-f58dfba2b72b\",\"title\":\"Canon\",\"content\":\"Whiskey bar\"}"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars?title=Canon"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Adding a GET handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Adding a DELETE handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"d34cbb70-bea6-11e8-af46-f58dfba2b72b\",\"title\":\"Canon\",\"content\":\"Whiskey bar\"}"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars?title=Canon"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Adding a GET handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Adding a DELETE handler on the '/api/seattlebar/' route"}
+{"level":"info","message":"Routing a Request"}

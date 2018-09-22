@@ -1,0 +1,307 @@
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /favicon.ico"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding with a 400 status code due to title not found"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const note = new Note(request.body.title, request.body.content);\n    barStorage.push(note); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200, note, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => { //! Vinicio - this is what gets passed as callback\n                                                //! Vinicio - at this point we know\n                                                // - we have a post request : the user wants to create a new note\n                                                // - the request has bee matched to this function\n\n    // ALGO:\n    // validate all the input (i.e. request)\n    // create a note\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    //! Vinicio - making sure I have all the information I need to create a new note\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const seattleBars = new SeattleBars(request.body.title, request.body.content);\n    barStorage.push(seattleBars); //! Vinicio - eventually, we'll add the note into our DB\n    sendJSON(200,seattleBars, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"The best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"The best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"request body [object Object]"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"request body [object Object]"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"request body [object Object]"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"The best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"POST"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"The best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"/api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"The best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"/api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"the best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"/api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"the best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"title":"Cannon","content":"The best BAR","level":"info"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url /api/seattlebar"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => {\n    // logger.log(logger.INFO, request.body);\n\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const seattleBars = new SeattleBars(request.body.title, request.body.content);\n    barStorage.push(seattleBars);\n    sendJSON(200,seattleBars, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"(request, response) => {\n    // logger.log(logger.INFO, request.body);\n\n    //----------------------------------------------------------------------------------\n    // REQUEST VALIDATION\n    //----------------------------------------------------------------------------------\n    if (!request.body) {\n        sendStatus(400, 'body not found', response);\n        return undefined;\n    }\n    if (!request.body.title) {\n        sendStatus(400, 'title not found', response);\n        return undefined;\n    }\n\n    if (!request.body.content) {\n        sendStatus(400, 'content not found', response);\n        return undefined;\n    }\n    //----------------------------------------------------------------------------------\n    // NOTE CREATION\n    //----------------------------------------------------------------------------------\n    const seattleBars = new SeattleBars(request.body.title, request.body.content);\n    barStorage.push(seattleBars);\n    sendJSON(200,seattleBars, response);\n    return undefined;\n}"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebars"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"8a973bb0-bdfe-11e8-b4aa-d1a066220ed3\",\"location\":{\"href\":\"http://localhost/\",\"origin\":\"http://localhost\",\"protocol\":\"http:\",\"host\":\"localhost\",\"hostname\":\"localhost\",\"port\":\"\",\"pathname\":\"/\",\"search\":\"\",\"hash\":\"\"},\"title\":\"Canon\",\"content\":\"Whiskey bar\"}"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding back with 400 status code"}
+{"level":"info","message":"Adding a POST handler on the '/api/seattlebar' route"}
+{"level":"info","message":"Server is on at PORT: 3000"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"edcc75f0-bdff-11e8-9a0b-99dae7b1bc9e\",\"title\":\"Cannon\",\"content\":\"The best BAR\"}"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"6ef625f0-be95-11e8-9a0b-99dae7b1bc9e\",\"title\":\"Cannon\",\"content\":\"The best BAR\"}"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"8fd35110-be97-11e8-9a0b-99dae7b1bc9e\",\"title\":\"Cannon\",\"content\":\"The best BAR\"}"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar/"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar/title"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url POST"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Responding with a 200 status and the following data"}
+{"level":"info","message":"{\"id\":\"f6913ce0-be98-11e8-9a0b-99dae7b1bc9e\",\"title\":\"Cannon\",\"content\":\"The best BAR\"}"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
+{"level":"info","message":"Routing a Request"}
+{"level":"info","message":"Original URL: /api/seattlebar"}
+{"level":"info","message":"url GET"}
+{"level":"info","message":"Found the following handler"}
