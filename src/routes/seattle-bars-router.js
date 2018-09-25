@@ -39,11 +39,16 @@ app.post('/api/seattlebar', (request, response) => {
     return undefined;
   }
   //----------------------------------------------------------------------------------
-  // NOTE CREATION
+  // Bar CREATION
   //----------------------------------------------------------------------------------
   const seattleBars = new SeattleBars(request.body.title, request.body.content);
   barStorage.push(seattleBars);
   sendJSON(200, seattleBars, response);
+  return undefined;
+});
+app.get('/', (request, response) => {
+  response.write('<!DOCTYPE><html></html>');
+  response.end();
   return undefined;
 });
 
